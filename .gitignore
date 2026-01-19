@@ -1,0 +1,110 @@
+.DS_Store
+tmux/plugins/
+history.txt
+
+# --- OS / editor junk ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+Thumbs.db
+Desktop.ini
+
+# Vim / Neovim swap/backup/undo
+*.swp
+*.swo
+*.swn
+*~
+*.bak
+*.tmp
+*.orig
+.netrwhist
+.Session.vim
+Session.vim
+**/undo/
+**/.vim/undo/
+**/.vim/swap/
+**/.vim/backup/
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/keybindings.json
+!.vscode/snippets/
+
+# JetBrains / other IDEs
+.idea/
+*.iml
+
+# --- Secrets: keep these OUT of git ---
+**/.env
+**/.env.*
+**/*secret*
+**/*secrets*
+**/*token*
+**/*tokens*
+**/*apikey*
+**/*api_key*
+**/*private_key*
+**/*id_rsa*
+**/*id_ed25519*
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/credentials*
+**/auth*.json
+
+# SSH / GPG / cloud creds (common footguns)
+.ssh/
+.gnupg/
+.aws/
+.kube/
+.config/gcloud/
+.config/gh/hosts.yml
+
+# --- Language / tooling caches (only if they end up inside the repo) ---
+node_modules/
+.pnpm-store/
+.yarn/
+.yarn-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+__pycache__/
+*.pyc
+.venv/
+.venv*/
+poetry.lock  # (ignore if you don't intend to pin deps in this repo)
+
+# --- App caches / state (usually not worth tracking) ---
+# Neovim plugin managers / caches
+.config/nvim/.git/
+.config/nvim/lazy/
+.config/nvim/plugin/packer_compiled.lua
+.local/share/nvim/
+.local/state/nvim/
+.local/cache/nvim/
+
+# zsh / shell history (never track)
+.zsh_history
+.bash_history
+.fish_history
+history.txt
+
+# tmux plugin manager (choose: track or ignore)
+tmux/plugins/
+# If you actually want to track tmux plugins, remove the line above.
+
+# Raycast (often machine/user specific; only track if you export configs intentionally)
+raycast/
+
+# fzf (usually generated)
+fzf/
